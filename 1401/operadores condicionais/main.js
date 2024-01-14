@@ -26,7 +26,7 @@ verificarNumero(1)
 verificarNumero(0)
 verificarNumero(-1)
 
-// exercício 10
+// exercício 10 - verificar através da media de notas se o aluno passou de ano ou não
 
 function mediaAluno (nome, x,y){
     media = (x+y)/2
@@ -37,5 +37,18 @@ function mediaAluno (nome, x,y){
     }
 }
 
-mediaAluno("Paulo",10, 8)
-mediaAluno("João",4, 8)
+mediaAluno("paulo",10, 8)
+mediaAluno("joão",4, 8)
+
+// exercício 11 - verificar se uma pessoa pode votar ou não com base na idade
+
+function podeVotar(idade){
+    if(idade >= 18 && idade <= 70){
+        console.log(`você tem ${idade} anos, pode votar`)
+    } else {
+        console.log(`não pode votar, você tem apenas ${idade} anos`)
+    }
+}
+
+podeVotar(10)
+podeVotar(40)
