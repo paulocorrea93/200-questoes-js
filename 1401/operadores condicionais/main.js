@@ -52,3 +52,21 @@ function podeVotar(idade){
 
 podeVotar(10)
 podeVotar(40)
+
+// exercício 12 - situação do estudante (aprovado, reprovado, recuperação)
+
+function situacaoAluno(nome, n1, n2){
+    media = (n1+n2)/2
+
+    if(media >= 7){
+        console.log(`parabéns ${nome}, sua média foi ${media}, você está aprovado`)
+    } else if(media >= 5 && media <= 6){
+        console.log(`fique atento ${nome}, sua média foi ${media}, você está de recuperação`)
+    } else {
+        console.log(`sinto muito ${nome}, sua média foi ${media}, você está reprovado`)
+    }
+}
+
+situacaoAluno("Paulo", 10, 10)
+situacaoAluno("João", 3, 1)
+situacaoAluno("Pedro", 7, 5)
