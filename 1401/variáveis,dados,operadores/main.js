@@ -52,3 +52,9 @@ console.log(a1 > a2)
 console.log(a1 < a2)
 console.log(a1 === a2)
 
+// exercício 08 - operador de incremento
+
+let b1 = 10
+b1++
+
+console.log(b1)
