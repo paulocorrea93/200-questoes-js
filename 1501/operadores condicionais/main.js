@@ -52,3 +52,14 @@ function palindromo(palavra){
 
 palindromo("amor")
 palindromo("radar")
+
+// exercício 16 - encontrar o maior número entre 3 números
+
+function oMaior(n1, n2, n3){
+    let nums = [n1, n2, n3]
+    let maiorNum = Math.max(...nums)
+
+    console.log(`entre os números ${n1}, ${n2}, ${n3} o maior é o: ${maiorNum}`)
+}
+
+oMaior(148,246,38)
