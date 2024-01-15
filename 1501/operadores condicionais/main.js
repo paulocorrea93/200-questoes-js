@@ -78,3 +78,16 @@ if(n % 2 === 0){
 
 parImpar(24)
 parImpar(31)
+
+// exercício 18 - pode dirigir ou não
+
+function podeDirigir(idade){
+    if(idade >= 18){
+        console.log(`Você tem ${idade} anos. Pode dirigir`)
+    } else {
+        console.log (`Você tem ${idade} anos. Não pode dirigir.`)
+    }
+}
+
+podeDirigir(13)
+podeDirigir(21)
