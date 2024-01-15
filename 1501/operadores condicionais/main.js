@@ -35,3 +35,20 @@ function anoBissexto(ano){
 }
 
 anoBissexto(2012)
+
+// exercício 15 - verificar se a palavra é um palindromo
+
+function palindromo(palavra){
+
+    let palavraOrig = palavra
+    let palavraReverse = palavraOrig.split('').reverse().join('')
+    
+    if(palavraOrig === palavraReverse){
+        console.log(`${palavra} é um palindromo.`)
+    } else {
+        console.log(`${palavra} não é um palindromo.`)
+    }
+}
+
+palindromo("amor")
+palindromo("radar")
