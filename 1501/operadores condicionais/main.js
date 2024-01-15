@@ -1,4 +1,4 @@
-// ecercício 13 - calculadora de IMC
+// exercício 13 - calculadora de IMC
 
 function calcIMC(nome, peso, altura){
     imcCalc = peso/(altura*altura)
