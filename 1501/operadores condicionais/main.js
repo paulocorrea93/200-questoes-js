@@ -63,3 +63,18 @@ function oMaior(n1, n2, n3){
 }
 
 oMaior(148,246,38)
+
+// exercício 17 - par ou impar
+
+function parImpar(n){
+
+if(n % 2 === 0){
+    console.log(`${n} é par`)
+} else {
+    console.log(`${n} é impar`)
+}
+
+}
+
+parImpar(24)
+parImpar(31)
