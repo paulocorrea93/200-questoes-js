@@ -21,3 +21,17 @@ function calcIMC(nome, peso, altura){
 }
 
 calcIMC("Paulo", 103, 1.75)
+
+// exercício 14 - verificar se o ano é bissexto
+
+function anoBissexto(ano){
+    bissexto = ano%4
+
+    if(bissexto === 0){
+        console.log(`${ano} é bissexto.`)
+    } else {
+        console.log(`${ano} não é bissexto.`)
+    }
+}
+
+anoBissexto(2012)
