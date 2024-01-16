@@ -72,3 +72,22 @@ function qtdDias(mes){
 qtdDias(2)
 qtdDias(6)
 qtdDias(1)
+
+// exercício 23 - definir cor do semaforo
+
+function corSemaforo(cor){
+    if(cor === "verde"){
+        console.log(`Siga em frente`)
+    } else if(cor === "amarelo"){
+        console.log(`Atenção`)
+    } else if(cor === "vermelho"){
+        console.log(`Pare`)
+    } else {
+        console.log(`Digite um cor válida`)
+    }
+}
+
+corSemaforo("verde")
+corSemaforo("vermelho")
+corSemaforo("amarelo")
+corSemaforo("azul")
