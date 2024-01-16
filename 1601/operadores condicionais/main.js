@@ -31,3 +31,23 @@ classificacaoDaNota(10)
 classificacaoDaNota(3)
 classificacaoDaNota(6)
 classificacaoDaNota(8)
+
+// exercício 21 - definir estação baseado no mês do ano
+
+function qualEstacao(mes){
+    
+    if(mes == 12 || mes == 1 || mes == 2){
+        console.log(`Verão.`)
+    } else if(mes == 3 || mes == 4 || mes == 5){
+        console.log(`Outono.`)
+    } else if(mes == 6 || mes == 7 || mes == 8){
+        console.log(`Inverno.`)
+    } else if(mes == 8 || mes == 10 || mes == 11){
+        console.log(`Primavera.`)
+    }
+}
+
+qualEstacao(2)
+qualEstacao(4)
+qualEstacao(6)
+qualEstacao(10)
