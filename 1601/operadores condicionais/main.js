@@ -30,3 +30,4 @@ function classificacaoDaNota(nota){
 classificacaoDaNota(10)
 classificacaoDaNota(3)
 classificacaoDaNota(6)
+classificacaoDaNota(8)
