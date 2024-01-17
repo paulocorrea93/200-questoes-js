@@ -52,3 +52,40 @@ while(chute!=numeroPensado){
 }
 
 console.log(`O número pensado é: ${chute}`)
+
+// exercício 32 - pedra, papel, tesoura contra a máquina
+
+// 3 variáveis, pedra, papel e tesoura
+// cada uma tem que ter sua contrapartida
+// se for tesoura, ganha de papel e perde para pedra
+// se for pedra, ganha de tesoura e perde para papel
+// se for papel, ganha de pedra e perde para tesoura
+
+
+let escolhaDoUsuario = "papel"
+let escolhaDoComputador
+let resultado
+
+do{
+  let aleatorio = Math.floor(Math.random()*3)
+  switch(aleatorio){
+    case 0:
+      escolhaDoComputador = "pedra"
+      case 1:
+      escolhaDoComputador = "papel"
+      break
+      default:
+        escolhaDoComputador = "tesoura"
+  }
+
+  if((escolhaDoUsuario === "pedra" && escolhaDoComputador === "tesoura") || 
+  (escolhaDoUsuario === "papel" && escolhaDoComputador === "pedra") || 
+  (escolhaDoUsuario === "tesoura" && escolhaDoComputador === "papel")){
+    resultado = `Vitória do usuário.`
+  } else if (escolhaDoUsuario === escolhaDoComputador){
+    resultado = `Empate.`
+  } else{
+    resultado = `Vitória do computador.`
+  }
+  console.log(`O usuário escolheu ${escolhaDoUsuario} e o computador escolheu ${escolhaDoComputador}, ${resultado}`)
+} while(resultado === "Empate")
