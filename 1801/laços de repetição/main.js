@@ -53,3 +53,13 @@ for(x = 1; x <= 100; x++){
   }
 
 }
+
+// exercício 37 - números ao quadrado
+
+let quadNum = 1
+
+while(quadNum <= 10){
+  let quadrado = quadNum*quadNum
+  console.log(quadrado)
+  quadNum++
+}
