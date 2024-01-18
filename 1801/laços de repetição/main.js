@@ -95,3 +95,14 @@ while(xInvertida >= 0){
   xInvertida--
 }
 console.log(`A string ${original} invertida é ${invertida}`)
+
+//41 - do while ara transformar decimal em binário
+
+let numerobin = 10
+let binario = ""
+
+do{
+  binario = (numerobin % 2) + binario
+  numerobin = Math.floor(numerobin/2)
+}while(numerobin > 0)
+console.log(`${numerobin} em binário é: ${binario}`)
