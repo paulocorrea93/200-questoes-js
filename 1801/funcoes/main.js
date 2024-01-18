@@ -45,3 +45,12 @@ function maiorDe3(n1, n2, n3){
 }
 
 maiorDe3(355, 45, 5)
+
+// exercício 50 - funcao string invertida
+
+function stringInvertida(palavra){
+  let palavraReverse = palavra.split("").reverse().join("")
+  console.log(`${palavra} ao contrário é ${palavraReverse}`)
+}
+
+stringInvertida("Paulo")
