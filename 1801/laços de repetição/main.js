@@ -14,3 +14,18 @@ for(x = 2; x <= 10; x++){
   n1 = n2
   n2 = fibo
 }
+
+// exercício 34 - FizzBuzz
+
+let fizzBuzz = 1
+
+while(fizzBuzz <= 100){
+  if(fizzBuzz % 3 == 0){
+    console.log(`Fizz`)
+  } else if(fizzBuzz % 5 == 0){
+    console.log(`Buzz`)
+  } else {
+    console.log(`${fizzBuzz}`)
+  }
+  fizzBuzz++
+}
