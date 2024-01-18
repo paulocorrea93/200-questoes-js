@@ -13,3 +13,13 @@ console.log(n1+n2)
 }
 
 somar2(4, 3)
+
+// execicio 47 - funcao ao quadrado
+
+function aoQuadrado(n){
+  let quadrado = n*n
+  console.log(quadrado)
+}
+
+aoQuadrado(12)
+
