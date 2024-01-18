@@ -36,3 +36,20 @@ for(x = 1; x <= 10; x++){
   let triNum = x*((x+1)/2)
   console.log(triNum)
 }
+
+// execício 36 - números perfeitos de 1 a 100
+
+for(x = 1; x <= 100; x++){
+  let soma = 0
+
+  for(y = 1; y < x; y++){
+    if(x % y === 0){
+      soma+=y
+    }
+  }
+
+  if(soma === x){
+    console.log(x)
+  }
+
+}
