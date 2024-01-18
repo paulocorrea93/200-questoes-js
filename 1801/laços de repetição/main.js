@@ -96,7 +96,7 @@ while(xInvertida >= 0){
 }
 console.log(`A string ${original} invertida é ${invertida}`)
 
-//41 - do while ara transformar decimal em binário
+//exercício 41 - do while ara transformar decimal em binário
 
 let numerobin = 10
 let binario = ""
@@ -105,4 +105,14 @@ do{
   binario = (numerobin % 2) + binario
   numerobin = Math.floor(numerobin/2)
 }while(numerobin > 0)
-console.log(`${numerobin} em binário é: ${binario}`)
+console.log(`O número é representado por ${binario} em binário`)
+
+// exercício 42 - numero binario para decimal
+
+let numbin = '1010'
+let decimal = 0
+
+for(let x = numbin.length -1, y = 0; x >= 0; x--, y++){
+  decimal += parseInt(numbin[x])*Math.pow(2, y)
+}
+console.log(`${numbin} em decimal é representado por: ${decimal}`)
