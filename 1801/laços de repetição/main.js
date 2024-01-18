@@ -136,3 +136,20 @@ function ePalindromo(numPali){
 
 ePalindromo(12345)
 ePalindromo(12321)
+
+// exercício 44 - soma de duas matrizes
+
+let matriz1 = [[1, 2],[3, 4]]
+let matriz2 = [[5, 6],[7, 8]]
+let soma = []
+let x1 = 0
+do{
+let y1 = 0
+soma[x1] = []
+do {
+  soma[x1][y1] = matriz1[x1][y1] + matriz2[x1][y1]
+  y1++
+} while(y1 < matriz1.length)
+x1++
+}while(x1 < matriz1.length)
+console.log(`A soma das matrizes é ${JSON.stringify(soma)}`)
