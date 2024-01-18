@@ -23,3 +23,15 @@ function aoQuadrado(n){
 
 aoQuadrado(12)
 
+// exercicio 48 - funcao impar ou par
+
+function imparPar(n){
+  if(n % 2 == 0){
+    console.log(`${n} é par`)
+  } else {
+    console.log(`${n} é impar`)
+  }
+}
+
+imparPar(4)
+imparPar(5)
