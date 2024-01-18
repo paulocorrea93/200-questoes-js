@@ -73,3 +73,13 @@ do{
   console.log(cubo)
   cuboNum++
 } while(cuboNum <= 10)
+
+// exercício 39 - número fatorial
+
+let numero = 5
+let fatorial = 1
+
+for(let x = 1; x <= numero; x++){
+  fatorial*=x
+}
+console.log(`O fatorial de ${numero} é ${fatorial}`)
