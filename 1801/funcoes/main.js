@@ -35,3 +35,13 @@ function imparPar(n){
 
 imparPar(4)
 imparPar(5)
+
+// exercicio 49 - maior de 3 numeros
+
+function maiorDe3(n1, n2, n3){
+  let maior = Math.max(n1, n2, n3)
+
+  console.log(maior)
+}
+
+maiorDe3(355, 45, 5)
