@@ -63,3 +63,13 @@ while(quadNum <= 10){
   console.log(quadrado)
   quadNum++
 }
+
+// exercício 38 - números ao cubo
+
+let cuboNum = 1
+
+do{
+  let cubo = cuboNum*cuboNum*cuboNum
+  console.log(cubo)
+  cuboNum++
+} while(cuboNum <= 10)
