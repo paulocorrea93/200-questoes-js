@@ -29,3 +29,10 @@ while(fizzBuzz <= 100){
   }
   fizzBuzz++
 }
+
+// exercício 35 - números triangulares
+
+for(x = 1; x <= 10; x++){
+  let triNum = x*((x+1)/2)
+  console.log(triNum)
+}
