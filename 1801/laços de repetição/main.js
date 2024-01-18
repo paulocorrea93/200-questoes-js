@@ -137,7 +137,7 @@ function ePalindromo(numPali){
 ePalindromo(12345)
 ePalindromo(12321)
 
-// exercício 44 - soma de duas matrizes
+// exercício 44 - soma de duas matrizes.
 
 let matriz1 = [[1, 2],[3, 4]]
 let matriz2 = [[5, 6],[7, 8]]
