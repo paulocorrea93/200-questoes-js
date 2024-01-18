@@ -116,3 +116,23 @@ for(let x = numbin.length -1, y = 0; x >= 0; x--, y++){
   decimal += parseInt(numbin[x])*Math.pow(2, y)
 }
 console.log(`${numbin} em decimal é representado por: ${decimal}`)
+
+// exercício 43 - numeros palindromos
+
+function ePalindromo(numPali){
+  let reversoPali = 0
+  let temp = numPali
+  while(temp > 0){
+    let digito = temp % 10
+    reversoPali = (reversoPali*10)+digito
+    temp = Math.floor(temp/10)
+  }
+  if(numPali === reversoPali){
+    console.log(`${numPali} é palindromo`)
+  } else {
+    console.log(`${numPali} não é palindromo`)
+  }
+}
+
+ePalindromo(12345)
+ePalindromo(12321)
