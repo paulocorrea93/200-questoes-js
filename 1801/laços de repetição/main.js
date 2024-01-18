@@ -83,3 +83,15 @@ for(let x = 1; x <= numero; x++){
   fatorial*=x
 }
 console.log(`O fatorial de ${numero} é ${fatorial}`)
+
+// exercício 40 - inverter string com while
+
+let original = "palavra"
+let invertida = ""
+let xInvertida = original.length -1
+
+while(xInvertida >= 0){
+  invertida+=original[xInvertida]
+  xInvertida--
+}
+console.log(`A string ${original} invertida é ${invertida}`)
