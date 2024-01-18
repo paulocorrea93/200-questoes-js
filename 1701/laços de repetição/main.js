@@ -42,16 +42,16 @@ let max = 100;
 let chute = Math.floor((min + max) / 2);
 let numeroPensado = 12;
 
-while(chute!=numeroPensado){
-  if(chute > numeroPensado){
-    max = chute
+while (chute != numeroPensado) {
+  if (chute > numeroPensado) {
+    max = chute;
   } else {
-    min = chute
+    min = chute;
   }
-  chute = Math.floor((min+max)/2)
+  chute = Math.floor((min + max) / 2);
 }
 
-console.log(`O número pensado é: ${chute}`)
+console.log(`O número pensado é: ${chute}`);
 
 // exercício 32 - pedra, papel, tesoura contra a máquina
 
@@ -61,31 +61,34 @@ console.log(`O número pensado é: ${chute}`)
 // se for pedra, ganha de tesoura e perde para papel
 // se for papel, ganha de pedra e perde para tesoura
 
+let escolhaDoUsuario = "papel";
+let escolhaDoComputador;
+let resultado;
 
-let escolhaDoUsuario = "papel"
-let escolhaDoComputador
-let resultado
-
-do{
-  let aleatorio = Math.floor(Math.random()*3)
-  switch(aleatorio){
+do {
+  let aleatorio = Math.floor(Math.random() * 3);
+  switch (aleatorio) {
     case 0:
-      escolhaDoComputador = "pedra"
-      case 1:
-      escolhaDoComputador = "papel"
-      break
-      default:
-        escolhaDoComputador = "tesoura"
+      escolhaDoComputador = "pedra";
+    case 1:
+      escolhaDoComputador = "papel";
+      break;
+    default:
+      escolhaDoComputador = "tesoura";
   }
 
-  if((escolhaDoUsuario === "pedra" && escolhaDoComputador === "tesoura") || 
-  (escolhaDoUsuario === "papel" && escolhaDoComputador === "pedra") || 
-  (escolhaDoUsuario === "tesoura" && escolhaDoComputador === "papel")){
-    resultado = `Vitória do usuário.`
-  } else if (escolhaDoUsuario === escolhaDoComputador){
-    resultado = `Empate.`
-  } else{
-    resultado = `Vitória do computador.`
+  if (
+    (escolhaDoUsuario === "pedra" && escolhaDoComputador === "tesoura") ||
+    (escolhaDoUsuario === "papel" && escolhaDoComputador === "pedra") ||
+    (escolhaDoUsuario === "tesoura" && escolhaDoComputador === "papel")
+  ) {
+    resultado = `Vitória do usuário.`;
+  } else if (escolhaDoUsuario === escolhaDoComputador) {
+    resultado = `Empate.`;
+  } else {
+    resultado = `Vitória do computador.`;
   }
-  console.log(`O usuário escolheu ${escolhaDoUsuario} e o computador escolheu ${escolhaDoComputador}, ${resultado}`)
-} while(resultado === "Empate")
+  console.log(
+    `O usuário escolheu ${escolhaDoUsuario} e o computador escolheu ${escolhaDoComputador}, ${resultado}`
+  );
+} while (resultado === "Empate");
