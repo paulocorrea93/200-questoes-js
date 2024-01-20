@@ -27,3 +27,13 @@ console.log(frutas);
 frutas.shift()
 
 console.log(frutas);
+
+// exercício 04 - metodos array - join e slice
+
+let tdsFrutas = frutas.join(", ")
+
+console.log(tdsFrutas);
+
+let duasFrutas = frutas.slice(1, 3)
+
+console.log(duasFrutas)
