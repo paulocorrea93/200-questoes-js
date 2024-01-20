@@ -37,3 +37,13 @@ console.log(tdsFrutas);
 let duasFrutas = frutas.slice(1, 3)
 
 console.log(duasFrutas)
+
+// exercício 05 - metodos de iteração - map
+
+let numeros = [10, 11, 12, 13, 14]
+
+let dobroNum = numeros.map((n) =>{
+  let dbl = n*n
+  console.log(dbl)
+})
+
