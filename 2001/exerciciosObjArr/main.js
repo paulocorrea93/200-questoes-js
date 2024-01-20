@@ -1,4 +1,4 @@
-// exercício 1 - criar estudante, com idade, curso e alterar idade
+// exercício 01 - criar estudante, com idade, curso e alterar idade
 
 let estudante = {
   nome: "Paulo",
@@ -7,5 +7,11 @@ let estudante = {
 }
 
 estudante.idade = 31
+
+console.log(estudante)
+
+// exercício 02 - adicionando propriedades ao objeto
+
+estudante.semestre = 4
 
 console.log(estudante)
