@@ -11,3 +11,9 @@ novoTitulo.textContent = "Novo título";
 let novaDiv = document.getElementById("main");
 
 novaDiv.innerHTML = "<p>Novo parágrafo.</p>";
+
+// alteração de atributos com DOM
+
+let novoLink = document.querySelector('a')
+
+novoLink.setAttribute('href', 'https://www.youtube.com.br')
