@@ -14,6 +14,10 @@ novaDiv.innerHTML = "<p>Novo parágrafo.</p>";
 
 // alteração de atributos com DOM
 
-let novoLink = document.querySelector('a')
+let novoLink = document.querySelector("a");
 
-novoLink.setAttribute('href', 'https://www.youtube.com.br')
+novoLink.setAttribute("href", "https://www.youtube.com.br");
+
+// alteração de estilos pelo DOM
+
+novoTitulo.style.color = "gray";
