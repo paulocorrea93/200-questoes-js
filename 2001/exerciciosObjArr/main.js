@@ -46,4 +46,3 @@ let dobroNum = numeros.map((n) =>{
   let dbl = n*n
   console.log(dbl)
 })
-
