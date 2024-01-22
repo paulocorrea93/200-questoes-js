@@ -29,3 +29,7 @@ myButton.style.color = 'white'
 myButton.style.background = '#800080'
 
 // exercício 05
+
+function mudarCor(){
+  mainHeader.style.color = '#800080'
+}
