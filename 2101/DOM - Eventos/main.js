@@ -9,3 +9,4 @@ titleExem.style.background = 'black'
 let meuParag = document.getElementById('meuParag')
 
 meuParag.classList.add('vermelho')
+meuParag.classList.remove('vermelho')
