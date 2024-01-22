@@ -21,4 +21,11 @@ link.setAttribute('href', 'https://www.youtube.com.br')
 
 // exercício 04
 
+mainHeader.style.color = 'silver'
+mainHeader.style.fontSize = '50px'
+myButton.style.borderRadius = '30px'
+myButton.style.border = 'none'
+myButton.style.color = 'white'
+myButton.style.background = '#800080'
+
 // exercício 05
