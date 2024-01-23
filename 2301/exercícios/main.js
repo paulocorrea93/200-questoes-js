@@ -1,15 +1,23 @@
 // exercício 01
 
-let meuFormulario = document.getElementById("meuFormulario");
+let nomeForm = document.getElementById("nomeForm");
 let nome = document.getElementById("nome");
+let emailForm = document.getElementById("emailForm");
+let emailText = document.getElementById("emailText");
 
-meuFormulario.addEventListener('submit', (e) => {
-  e.preventDefault()
+nomeForm.addEventListener("submit", (e) => {
+  e.preventDefault();
 
-  if(nome.value === ""){
-    alert("Digite seu nome no campo 'nome'!")
-  } else {
-    alert("Formulário enviado com sucesso.")
+  if (nome.value === "") {
+    alert("Digite seu nome no campo 'nome'!");
   }
+});
 
-})
+// exercício 02
+
+emailForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  if (!emailText.value.includes("@") || !emailText.value.includes(".")) {
+    alert("E-mail inválido.");
+  }
+});
