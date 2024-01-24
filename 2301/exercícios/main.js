@@ -21,3 +21,4 @@ emailForm.addEventListener("submit", (e) => {
     alert("E-mail inválido.");
   }
 });
+
