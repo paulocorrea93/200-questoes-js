@@ -7,3 +7,9 @@ let aluno = {
     nMatricula: 1234,
     curso: "ciência da computação"
 }
+
+// converção do objeto em JSON
+
+let alunoJSON = JSON.stringify(aluno)
+
+console.log(alunoJSON)
