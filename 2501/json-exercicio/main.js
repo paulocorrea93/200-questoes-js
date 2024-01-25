@@ -13,3 +13,9 @@ let aluno = {
 let alunoJSON = JSON.stringify(aluno)
 
 console.log(alunoJSON)
+
+// conversão do JSON em Objeto
+
+jsonAluno = JSON.parse(alunoJSON)
+
+console.log(jsonAluno)
