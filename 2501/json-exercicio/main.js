@@ -19,3 +19,16 @@ console.log(alunoJSON)
 jsonAluno = JSON.parse(alunoJSON)
 
 console.log(jsonAluno)
+
+// importação de elementos
+
+let meuBotao = document.getElementById('meuBotao')
+
+// salvando entrada no armazenamento local
+
+meuBotao.addEventListener('click', (e)=> {
+    e.preventDefault()
+    let meuTexto = document.getElementById('meuTexto').value
+    localStorage.setItem("meuTexto", meuTexto)
+    console.log(localStorage)
+})
