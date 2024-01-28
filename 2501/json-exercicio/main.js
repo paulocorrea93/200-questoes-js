@@ -24,6 +24,7 @@ console.log(jsonAluno);
 
 let meuBotao = document.getElementById("meuBotao");
 let btnRecup = document.getElementById("btn-recup");
+let btnDelete = document.getElementById("btn-delete");
 
 // salvando entrada no armazenamento local
 
@@ -37,6 +38,12 @@ meuBotao.addEventListener("click", (e) => {
 btnRecup.addEventListener("click", (e) => {
   e.preventDefault();
   let meuTexto = document.getElementById("meuTexto").value;
-  let valor = localStorage.getItem("meuTexto", meuTexto)
-  alert(valor)
+  let valor = localStorage.getItem("meuTexto", meuTexto);
+  alert(valor);
+});
+
+btnDelete.addEventListener("click", (e) => {
+  e.preventDefault();
+  let meuTexto = document.getElementById("meuTexto").value;
+  localStorage.removeItem("meuTexto", meuTexto)
 });
