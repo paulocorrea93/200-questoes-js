@@ -47,3 +47,17 @@ btnDelete.addEventListener("click", (e) => {
   let meuTexto = document.getElementById("meuTexto").value;
   localStorage.removeItem("meuTexto", meuTexto)
 });
+
+// armazenando objetos no localStorage
+
+let alunoObj = {
+    nome: "Gabriel",
+    idade: 30
+}
+
+let meuJson = JSON.stringify(alunoObj)
+localStorage.setItem("alunoObj", meuJson)
+
+let objRecup = localStorage.getItem("alunoObj")
+let novoObj = JSON.parse(objRecup)
+console.log(novoObj)
