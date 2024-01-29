@@ -43,3 +43,18 @@ fetch("https://jsonplaceholder.typicode.com/posts", {
   .then((response) => response.json())
   .then((data) => console.log(data))
   .catch((erro) => `Erro: ${erro}`);
+
+// retornando promisse com then, catch e finally
+
+function retornaDez() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve(10);
+    }, 3000);
+  });
+}
+
+retornaDez()
+  .then((valor) => console.log(valor))
+  .catch((erro) => console.log(`Erro:${erro}`))
+  .finally(console.log(`Promise finalizada.`));
