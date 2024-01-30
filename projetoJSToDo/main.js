@@ -12,11 +12,27 @@ const adicionarTarefa = (e) => {
   if (taskInput.value.trim()) {
     const li = document.createElement("li");
     li.textContent = taskInput.value;
+    const deleteBtn = document.createElement("button");
+    deleteBtn.textContent = "Excluir";
+    deleteBtn.classList.add("delete");
+    li.appendChild(deleteBtn);
     taskList.appendChild(li);
     taskInput.value = "";
   } else {
-    alert(`Por favor, adicione uma tarefa.`)
+    alert(`Por favor, adicione uma tarefa.`);
   }
 };
 
-form.addEventListener('submit', adicionarTarefa)
+const excluirTask = (e) => {
+  e.preventDefault();
+  if (e.target.classList.conteins("delete")) {
+    if (confirm("Tem certeza que deseja excluir essa tarefa?")) {
+      e.target.parentElement.remove();
+    }
+    {
+    }
+  }
+};
+
+taskList.addEventListener('click', excluirTask)
+form.addEventListener("submit", adicionarTarefa);
