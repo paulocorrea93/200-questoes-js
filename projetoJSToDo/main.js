@@ -25,7 +25,7 @@ const adicionarTarefa = (e) => {
 
 const excluirTask = (e) => {
   e.preventDefault();
-  if (e.target.classList.conteins("delete")) {
+  if (e.target.classList.contains("delete")) {
     if (confirm("Tem certeza que deseja excluir essa tarefa?")) {
       e.target.parentElement.remove();
     }
@@ -34,5 +34,28 @@ const excluirTask = (e) => {
   }
 };
 
-taskList.addEventListener('click', excluirTask)
+// função para recuperar task no local storage
+
+const getTask = () => {
+  let tasks;
+
+  if (localStorage.getItem("tasks") === "null") {
+    tasks = [];
+  } else {
+    tasks.JSON.parse(localStorage.getItem("tasks"));
+  }
+
+  tasks.forEach((task) => {
+    const li = document.createElement("li");
+    li.textContent = "task";
+
+    const deleteBtn = document.createElement("button");
+    deleteBtn.textContent = "Excluir";
+    deleteBtn.classList.add("delete");
+    li.appendChild(deleteBtn);
+    taskList.appendChild(li);
+  });
+};
+
+taskList.addEventListener("click", excluirTask);
 form.addEventListener("submit", adicionarTarefa);
