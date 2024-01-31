@@ -73,3 +73,24 @@ const armazenarTask = (task) => {
   tasks.push(task);
   localStorage.setItem("tasks", JSON.stringify(tasks));
 };
+
+// função para remover tarefa do localStorage
+
+const removerLocalStorage = (taskItem) => {
+  let tasks;
+  if (localStorage.getItem("tasks") === "null") {
+    tasks = [];
+  } else {
+    tasks = JSON.parse(localStorage.getItem("tasks"));
+  }
+
+  let taskText = taskItem.textContent.slice(0, -1);
+
+  tasks.forEach((task, index) => {
+    if (taskText === task) {
+      tasks.slice(index, 1);
+    }
+  });
+
+  localStorage.setItem("tasks", JSON.stringify(tasks));
+};
