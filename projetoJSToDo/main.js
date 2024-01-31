@@ -59,3 +59,17 @@ const getTask = () => {
 
 taskList.addEventListener("click", excluirTask);
 form.addEventListener("submit", adicionarTarefa);
+
+// função para armazenar tarefas
+
+const armazenarTask = (task) => {
+  let tasks;
+  if (localStorage.getItem === "null") {
+    tasks = [];
+  } else {
+    tasks = JSON.parse(localStorage.getItem("tasks"));
+  }
+
+  tasks.push(task);
+  localStorage.setItem("tasks", JSON.stringify(tasks));
+};
